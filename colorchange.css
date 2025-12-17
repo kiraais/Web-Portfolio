@@ -1,3 +1,15 @@
+:root {
+    --bg-color: #131313;
+    --text-color: #fff;
+    --button-bg: #667eea;
+    --backbutton-bg: rgb(245, 161, 35);
+    --hover-bg: #515ed2;
+}
+
+
+
+
+
 .center {
     width: 300px;
     height: 200px;
@@ -5,7 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #131313;
+    background-color: var(--bg-color);
     border-radius: 16px;
     transition: background 0.5s;
 }
@@ -16,20 +28,18 @@
     font-weight: bold;
     border: none;
     border-radius: 8px;
-    background-color: #667eea;
-    color: #131313;
+    background-color: var(--button-bg);
+    color: var(--text-color);
     cursor: pointer;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     transition: background 0.2s;
 }
 
-.Button:hover {
-    background-color: #515ed2;
-}
+
 .backbutton {
     width: 70px;
     height: 30px;
-    background-color: rgb(245, 161, 35);
+    background-color: var(--backbutton-bg);
     border-color: none;
     border-radius: 20px;
     color: white;
